@@ -1,0 +1,49 @@
+body {
+  font-family: "PlayFairDisplay", serif;
+  border: 1px solid transparent;
+}
+/* Navigation */
+header {
+  margin-top: 77px;
+}
+.navigation {
+  width: 910px;
+
+  margin: 0 auto;
+}
+.navigation-list {
+  list-style-type: none;
+  font-size: 14px;
+  color: #c6c6c6;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-list-item {
+  display: inline-block;
+  text-align: center;
+  margin-left: 122px;
+}
+
+.navigation-list-item:hover,
+.navigation-list-item:focus {
+  color: #6accf9;
+}
+
+/* Main Section */
+.visually-hidden:not(:focus):not(:active),
+input[type="”checkbox”"].visually-hidden,
+input[type="”radio”"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
