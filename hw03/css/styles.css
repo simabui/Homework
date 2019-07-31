@@ -5,6 +5,7 @@ body {
 /* Navigation */
 header {
   margin-top: 77px;
+  margin-bottom: 104px;
 }
 .navigation {
   width: 910px;
@@ -46,4 +47,41 @@ input[type="”radio”"].visually-hidden {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.topics-container {
+  width: 903px;
+  margin: 0 auto;
+}
+
+.topics-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}
+
+.topics-list-item{
+  width: 421px;
+  display: inline-block;
+  font-size: 14px;
+}
+.topics-list-item:nth-child(even){
+  margin-left: 61px;
+}
+.topics-type{
+  color: #dbd8d1;
+  line-height: 16.8px;
+}
+
+.topics-title{
+  font-size: 30px;
+  line-height: 36px;
+  color: #6d6d6d;
+}
+
+.topics-description{
+  font-size: 14px;
+  line-height: 24px;
+  color: #aaaaaa;
 }
