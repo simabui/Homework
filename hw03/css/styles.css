@@ -61,48 +61,49 @@ input[type="”radio”"].visually-hidden {
   font-size: 0;
 }
 
-.topics-list-item{
+.topics-list-item {
   width: 421px;
   display: inline-block;
   font-size: 14px;
 }
-.topics-list-item:nth-child(even){
+.topics-list-item:nth-child(even) {
   margin-left: 61px;
 }
-.topics-type{
+.topics-type {
   color: #dbd8d1;
   line-height: 17px;
   text-transform: uppercase;
+  font-weight: 400;
 }
 
-.topics-title{
+.topics-title {
   font-size: 30px;
   line-height: 36px;
   color: #6d6d6d;
 }
 
-.topics-description{
+.topics-description {
   font-size: 14px;
   line-height: 24px;
   color: #aaaaaa;
 }
 /* Footer */
- 
-.footer-container{
-  padding-top: 58px;
-  padding-bottom: 70px;
-} 
 
-.button{
-  padding: 34px 22px;
-  border: 1px solid #626262;
-  width: 164px;
-  margin: 0 auto;
+.footer-container {
+  margin: 70px 0 58px 0;
   text-align: center;
 }
 
-.button-text{
+.button {
+  box-sizing: border-box;
+  border: 1px solid #626262;
+  margin: 0 auto;
+}
+
+.button-text {
   font-size: 20px;
   line-height: 24px;
   color: #626262;
+  padding: 22px 34px;
+  cursor: pointer;
 }
