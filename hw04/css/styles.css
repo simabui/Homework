@@ -197,7 +197,7 @@ input[type="”radio”"].visually-hidden {
 
 /* News Section */
 .news {
-  width: 350px;
+  width: 351px;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   float: left;
@@ -205,7 +205,7 @@ input[type="”radio”"].visually-hidden {
 }
 
 .news:not(:first-child) {
-  margin-left: 30px;
+  margin-left: 28px;
 }
 .news-title {
   font-size: 18px;
