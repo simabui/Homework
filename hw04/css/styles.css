@@ -19,6 +19,10 @@ img {
   border: 1px solid transparent;
 }
 
+section {
+  margin-bottom: 97px;
+}
+
 .clearfix::after {
   display: table;
   content: "";
@@ -88,6 +92,7 @@ input[type="”radio”"].visually-hidden {
   margin: 0 auto;
   font-size: 48px;
   line-height: 32px;
+  text-align: center;
   color: #515151;
   font-weight: 700;
   text-transform: uppercase;
@@ -173,18 +178,64 @@ input[type="”radio”"].visually-hidden {
   font-weight: 700;
   color: #fff;
   background-color: #8c8c8c;
-  padding: 7px 0 1px 8px;
+  padding: 7px 0 1px 10px;
 }
 
 .section-feature-price::before {
   content: "$";
-  display: inline-block;
+  display: block;
+  float: left;
 }
 
-.section-feature:hover .section-feature-name{
-    background-color: #1abc9c;
+.section-feature:hover .section-feature-name {
+  background-color: #1abc9c;
 }
 
-.section-feature:hover .section-feature-price{
-    background-color: #7fd9c7;
+.section-feature:hover .section-feature-price {
+  background-color: #7fd9c7;
+}
+
+/* News Section */
+.news {
+  width: 350px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  float: left;
+  margin-top: 67px;
+}
+
+.news:not(:first-child) {
+  margin-left: 30px;
+}
+.news-title {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #605e5e;
+}
+
+.news-title::after {
+  content: "";
+  display: block;
+  width: 136px;
+  height: 4px;
+  background-color: #1abc9c;
+  margin-top: 12px;
+}
+
+.news-description {
+  font-size: 14px;
+  line-height: 26px;
+  color: #515151;
+  margin-top: 26px;
+}
+
+.news-button {
+  background-color: #1abc9c;
+  color: #fff;
+  font-size: 16px;
+  line-height: 26px;
+  width: 158px;
+  height: 51px;
+  margin-top: 14px;
 }
