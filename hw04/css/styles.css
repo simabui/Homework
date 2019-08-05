@@ -160,6 +160,7 @@ input[type="”radio”"].visually-hidden {
 .feature-name-size {
   display: block;
   width: 201px;
+  height: 40px;
 }
 .section-feature-name {
   font-size: 18px;
@@ -168,23 +169,24 @@ input[type="”radio”"].visually-hidden {
   color: #ffffff;
   background-color: #323232;
   text-transform: uppercase;
-  padding: 7px 0 1px 13px;
+  padding: 5px 0 1px 13px;
   float: left;
 }
 
 .section-feature-price {
-  display: block;
-  width: 54px;
-  height: auto;
   float: right;
   font-size: 18px;
   line-height: 32px;
   font-weight: 700;
   color: #fff;
   background-color: #8c8c8c;
-  padding: 7px 0 1px 10px;
+  padding: 5px 0 1px 10px;
 }
-
+.feature-price-size{
+  display: block;
+  width: 54px;
+  height: 40px;
+}
 .section-feature-price::before {
   content: "$";
   display: block;
