@@ -13,7 +13,7 @@ img {
   max-width: 100%;
 }
 .container {
-  width: 1170px;
+  width: 1110px;
   margin: 0 auto;
   font-family: "Roboto", sans-serif;
   border: 1px solid transparent;
@@ -54,7 +54,7 @@ input[type="”radio”"].visually-hidden {
   text-transform: uppercase;
   font-weight: 400;
   float: left;
-  color: #a4a3a3;
+  color: #555252;
   margin-top: 37px;
 }
 
@@ -66,10 +66,11 @@ input[type="”radio”"].visually-hidden {
   list-style-type: none;
   float: right;
   margin-top: 42px;
+  padding-inline-start: 0;
 }
-.nav-list-item {
+.nav-list-item{
   float: left;
-  margin-right: 34px;
+  margin-left: 34px;
 }
 
 .nav-list-item a {
@@ -110,6 +111,9 @@ input[type="”radio”"].visually-hidden {
 .section-container {
   width: 1110px;
   margin: 0 auto;
+}
+.feature-wrapper{
+  margin-top: 97px;
 }
 .section-feature {
   float: left;
@@ -212,6 +216,7 @@ input[type="”radio”"].visually-hidden {
   line-height: 24px;
   font-weight: 600;
   color: #605e5e;
+  margin-top: 15px;
 }
 
 .news-title::after {
