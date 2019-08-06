@@ -66,9 +66,9 @@ input[type="”radio”"].visually-hidden {
   list-style-type: none;
   float: right;
   margin-top: 42px;
-  padding-inline-start: 0;
+  padding: 0;
 }
-.nav-list-item{
+.nav-list-item {
   float: left;
   margin-left: 34px;
 }
@@ -112,7 +112,7 @@ input[type="”radio”"].visually-hidden {
   width: 1110px;
   margin: 0 auto;
 }
-.feature-wrapper{
+.feature-wrapper {
   margin-top: 97px;
 }
 .section-feature {
@@ -182,7 +182,7 @@ input[type="”radio”"].visually-hidden {
   background-color: #8c8c8c;
   padding: 5px 0 1px 10px;
 }
-.feature-price-size{
+.feature-price-size {
   display: block;
   width: 54px;
   height: 40px;
