@@ -12,6 +12,10 @@ img {
   height: 281px;
   max-width: 100%;
 }
+h2{
+  margin: 0;
+  padding: 0;
+}
 .container {
   width: 1110px;
   margin: 0 auto;
@@ -89,11 +93,9 @@ input[type="”radio”"].visually-hidden {
 /* Main Section */
 
 .section-title {
-  width: 540px;
-  margin: 0 auto;
   font-size: 48px;
   font-family: 'Roboto', sans-serif;
-  line-height: 32px;
+  line-height: 57.6px;
   text-align: center;
   color: #515151;
   font-weight: 700;
@@ -241,6 +243,7 @@ input[type="”radio”"].visually-hidden {
 .news-button {
   background-color: #1abc9c;
   color: #fff;
+  cursor: pointer;
   font-size: 16px;
   line-height: 26px;
   width: 158px;
