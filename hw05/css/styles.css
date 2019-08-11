@@ -342,6 +342,7 @@ footer{
   margin-top: 31px;
 }
 
-.footer-text > span{
-  color: var(--secondary-color)
+.footer-text > a{
+  color: var(--secondary-color);
+  text-decoration: none;
 }
