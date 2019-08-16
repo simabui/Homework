@@ -30,7 +30,11 @@ p {
 h2 {
   margin: 0;
 }
-
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
 .visually-hidden:not(:focus):not(:active),
 input[type="”checkbox”"].visually-hidden,
 input[type="”radio”"].visually-hidden {
@@ -49,10 +53,12 @@ input[type="”radio”"].visually-hidden {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: flex-start;
-  margin-top: 27px;
 }
 
+header .flex{
+  align-items: center;
+  margin-top: 27px;
+}
 /* HEADER */
 
 .header-logo {
@@ -63,10 +69,9 @@ input[type="”radio”"].visually-hidden {
 }
 
 .header-nav {
-  list-style-type: none;
   width: 491px;
   display: flex;
-  padding: 0;
+  align-items: flex-end;
   justify-content: space-between;
 }
 
@@ -77,22 +82,28 @@ input[type="”radio”"].visually-hidden {
   font-weight: 400;
   text-transform: uppercase;
   text-decoration: none;
+  position: relative;
 }
 
 .header-nav-list:hover {
   color: #f48989;
 }
-.header-nav-list::after {
+.header-nav-list:focus {
+  color: #f48989;
+}
+/* .header-nav-list::after {
   content: "";
   display: block;
   width: 100%;
   height: 2px;
   background-color: rgba(244, 137, 137, 0);
   margin-top: 12px;
-}
+} */
 
 .header-nav-list:hover::after {
   content: "";
+  position: absolute;
+  bottom: -10px;
   display: block;
   width: 100%;
   height: 2px;
@@ -102,22 +113,24 @@ input[type="”radio”"].visually-hidden {
 
 /* SERVICES SECTION */
 
-.services-title {
+.section-title {
   text-align: center;
-  text-transform: uppercase;
-  font-size: 30px;
-  line-height: 36px;
   margin-top: 97px;
 }
 
-.services-title-string {
+.section-title-first {
   font-family: var(--kaushan-font);
   font-size: 24px;
   line-height: 29px;
   font-weight: 400;
 }
+.section-title-second{
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 36px;
+}
 
-.services-title:after{
+.section-title:after{
   content: "";
   display: block;
   width: 60px;
@@ -153,11 +166,108 @@ input[type="”radio”"].visually-hidden {
   margin-bottom: 13px;
 }
 .services-item:not(:nth-last-child(-n+3)){
-  margin-bottom: 58px;
+  margin-bottom: 56px;
 }
 .services-description{
   font-family: var(--secondary-font);
   font-size: 15px;
   line-height: 24px;
   color: #999999;
+}
+
+/* Team Section */
+
+.team-about{
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #999999;
+  text-align: center;
+  width: 980px;
+  margin: 0 auto;
+}
+.team-card-list{
+  margin-top: 88px;
+}
+
+.team-card-name{
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--secondary-color);
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 29px;
+}
+
+.team-card-position{
+  font-family: var(--secondary-font);
+  font-weight: 300;
+  font-style: italic;
+  font-size: 15px;
+  line-height: 24px;
+  color: #999999;
+  text-align: center;
+  margin-top: 11px;
+}
+
+/* FOOTER */
+
+.footer-container{
+   margin-top: 79px;
+}
+.footer-container:before{
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  margin-bottom: 23px;
+  background-color: rgb(229, 229, 229);
+}
+
+footer .flex{
+  align-items: center;
+}
+.footer-copyright{
+  font-family: var(--main-font);
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+}
+
+.footer-copyright a{
+  color: #f9c0c0;
+  text-decoration: none;
+}
+
+.mail-form{
+  margin-bottom: 15px;
+  display: flex;
+}
+.mail-form input {
+  width: 230px;
+  padding: 14px;
+}
+.mail-form input::placeholder{
+  font-family: var(--secondary-font);
+  font-weight: 300;
+  font-style: italic;
+  font-size: 15px;
+  line-height: 24px;
+  color: #cccccc;
+}
+.mail-button{
+  /* border: none; */
+  font-family: var(--main-font);
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 700;
+  color: #fff;
+  background-color: var(--primary-color);
+  padding: 15px 33px;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
 }
