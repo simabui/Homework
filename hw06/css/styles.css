@@ -66,6 +66,7 @@ header .flex {
   line-height: 36px;
   font-weight: 700;
   color: var(--primary-color);
+  transform: translateY(-4px);
 }
 
 .header-nav {
@@ -137,11 +138,6 @@ header .flex {
   height: 2px;
   background-color: #f48989;
   margin: 40px auto 65px auto;
-}
-
-.services-list {
-  padding: 0;
-  margin: 0;
 }
 
 .services-item {
@@ -239,17 +235,17 @@ header .flex {
   transition: background-color 0.2s linear;
 }
 
-.team-card-item:hover .team-card-photo {
+.team-card-photo:hover{
   box-shadow: 10px 10px 2px 0 var(--primary-color);
   transform: translateY(-10px);
   transition: box-shadow 0.2s linear, transform 0.2s linear;
 }
 
-.team-card-item:hover .team-card-photo::after {
+.team-card-photo:hover::after {
   opacity: 0.9;
   transition: opacity 0.2s linear;
 }
-.team-card-item:hover .social-container {
+.team-card-photo:hover .social-container {
   opacity: 1;
   transition: opacity 0.2s linear;
 }
@@ -330,7 +326,6 @@ footer .flex {
   color: #fff;
   background-color: var(--primary-color);
   padding: 15px 33px;
-  border: none;
   cursor: pointer;
   text-transform: uppercase;
 }
