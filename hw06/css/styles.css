@@ -185,7 +185,6 @@ header .flex {
   margin-top: 88px;
 }
 .team-card-photo {
-  background-image: url(../img/team-1.jpg);
   max-width: 100%;
   height: 470px;
   position: relative;
@@ -198,15 +197,15 @@ header .flex {
   top: 0;
   width: 100%;
   height: 100%;
-  display: none;
+  opacity: 0;
   background: linear-gradient(
     to top,
-    rgba(230, 204, 128, 0.9) 0%,
-    rgba(238, 136, 137, 0.9) 100%
+    rgb(230, 204, 128) 0%,
+    rgb(238, 136, 137) 100%
   );
 }
 .social-container{
-  visibility: hidden;
+  opacity: 0;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -241,10 +240,12 @@ header .flex {
 }
 
 .team-card-item:hover .team-card-photo::after {
-  display: block;
+  opacity: 0.9;
+  transition: opacity .2s linear;
 }
 .team-card-item:hover .social-container{
-  visibility: visible;
+  opacity: 1;
+  transition: opacity .2s linear;
 }
 .team-card-name {
   font-family: var(--main-font);
