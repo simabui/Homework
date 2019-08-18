@@ -305,6 +305,7 @@ footer .flex {
 .mail-form input {
   width: 230px;
   padding: 14px;
+  outline: none;
 }
 .mail-form input::placeholder {
   font-family: var(--secondary-font);
