@@ -87,14 +87,14 @@ header .flex {
 
 .header-nav-list:hover {
   color: #f48989;
-  transition: color .2s linear;
+  transition: color 0.2s linear;
 }
 .header-nav-list:focus {
   color: #f48989;
-  transition: color .2s linear;
+  transition: color 0.2s linear;
 }
 
-.header-nav-list:hover::after {
+.header-nav-list::after {
   content: "";
   position: absolute;
   bottom: -10px;
@@ -103,6 +103,12 @@ header .flex {
   height: 2px;
   background-color: #f48989;
   margin-top: 12px;
+  opacity: 0;
+}
+
+.header-nav-list:hover::after {
+  opacity: 1;
+  transition: opacity 0.2s linear;
 }
 
 /* SERVICES SECTION */
@@ -204,7 +210,7 @@ header .flex {
     rgb(238, 136, 137) 100%
   );
 }
-.social-container{
+.social-container {
   opacity: 0;
   position: absolute;
   top: 50%;
@@ -212,10 +218,10 @@ header .flex {
   transform: translate(-50%, -50%);
   z-index: 1;
 }
-.social-list{
+.social-list {
   display: flex;
 }
-.social-list-item{
+.social-list-item {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -224,28 +230,28 @@ header .flex {
   background-color: #fce38a;
   border: 1px solid #f9bd87;
 }
-.social-list-item:hover{
+.social-list-item:hover {
   background-color: var(--primary-color);
-  transition: background-color .2s linear;
+  transition: background-color 0.2s linear;
 }
-.social-list-item:focus{
+.social-list-item:focus {
   background-color: var(--primary-color);
-  transition: background-color .2s linear;
+  transition: background-color 0.2s linear;
 }
 
 .team-card-item:hover .team-card-photo {
   box-shadow: 10px 10px 2px 0 var(--primary-color);
   transform: translateY(-10px);
-  transition: box-shadow .2s linear, transform .2s linear;
+  transition: box-shadow 0.2s linear, transform 0.2s linear;
 }
 
 .team-card-item:hover .team-card-photo::after {
   opacity: 0.9;
-  transition: opacity .2s linear;
+  transition: opacity 0.2s linear;
 }
-.team-card-item:hover .social-container{
+.team-card-item:hover .social-container {
   opacity: 1;
-  transition: opacity .2s linear;
+  transition: opacity 0.2s linear;
 }
 .team-card-name {
   font-family: var(--main-font);
@@ -268,7 +274,6 @@ header .flex {
   text-align: center;
   margin-top: 11px;
 }
-
 
 /* FOOTER */
 
