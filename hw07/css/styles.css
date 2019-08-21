@@ -1,0 +1,57 @@
+:root {
+  --primary-color: #95e1d3;
+  --secondary-color: #333333;
+  --secondary-font: "Roboto", sans-serif;
+  --kaushan-font: "Kaushan Script", cursive;
+  --main-font: "Montserrat", sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var(--main-font);
+  color: var(--secondary-color);
+}
+.container {
+  margin: 0 auto;
+  width: 1200px;
+}
+p {
+  margin: 0;
+}
+h2 {
+  margin: 0;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.visually-hidden:not(:focus):not(:active),
+input[type="”checkbox”"].visually-hidden,
+input[type="”radio”"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
