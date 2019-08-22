@@ -1,9 +1,12 @@
+@import "fonts/css";
+
 :root {
-  --primary-color: #95e1d3;
-  --secondary-color: #333333;
-  --secondary-font: "Roboto", sans-serif;
-  --kaushan-font: "Kaushan Script", cursive;
-  --main-font: "Montserrat", sans-serif;
+  --golden-color: #fed136;
+  --black-color: #222222;
+  --montserrat-font: "Montserrat", sans-serif;
+  --oleo-font: "Oleo Script", sans-serif;
+  --roboto-font: "Roboto Slab", serif;
+  --goudy-font: "Goudy Bookletter 1911", serif;
 }
 
 html {
@@ -17,8 +20,8 @@ html {
 }
 
 body {
-  font-family: var(--main-font);
-  color: var(--secondary-color);
+  font-family: var(--montserrat-font);
+  color: var(--golden-color);
 }
 .container {
   margin: 0 auto;

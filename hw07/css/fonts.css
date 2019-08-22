@@ -1,0 +1,65 @@
+/* Montserrat */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montserrat Regular"), local("Montserrat-Regular"),
+    url("../fonts/montserrat-v14-latin-regular.woff2") format("woff2"),
+    url("../fonts/montserrat-v14-latin-regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Montserrat Bold"), local("Montserrat-Bold"),
+    url("../fonts/montserrat-v14-latin-700.woff2") format("woff2"),
+    url("../fonts/montserrat-v14-latin-700.woff") format("woff");
+}
+
+/* Oleo */
+@font-face {
+  font-family: "Oleo Script";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Oleo Script"), local("OleoScript-Regular"),
+    url("../fonts/oleo-script-v8-latin-regular.woff2") format("woff2"),
+    url("../fonts/oleo-script-v8-latin-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Oleo Script";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Oleo Script Bold"), local("OleoScript-Bold"),
+    url("../fonts/oleo-script-v8-latin-700.woff2") format("woff2"),
+    url("../fonts/oleo-script-v8-latin-700.woff") format("woff");
+}
+/* Roboto Slab */
+@font-face {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto Slab Regular"), local("RobotoSlab-Regular"),
+    url("../fonts/roboto-slab-v9-latin-regular.woff2") format("woff2"),
+    url("../fonts/roboto-slab-v9-latin-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Roboto Slab Bold"), local("RobotoSlab-Bold"),
+    url("../fonts/roboto-slab-v9-latin-700.woff2") format("woff2"),
+    url("../fonts/roboto-slab-v9-latin-700.woff") format("woff");
+}
+
+/* Goudy */
+
+@font-face {
+  font-family: "Goudy Bookletter 1911";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Goudy Bookletter 1911"), local("GoudyBookletter1911"),
+    url("../fonts/goudy-bookletter-1911-v9-latin-regular.woff2") format("woff2"),
+    url("../fonts/goudy-bookletter-1911-v9-latin-regular.woff") format("woff"); 
+}
