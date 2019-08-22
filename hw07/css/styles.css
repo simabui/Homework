@@ -1,4 +1,4 @@
-@import "fonts/css";
+@import "fonts.css";
 
 :root {
   --golden-color: #fed136;
@@ -21,11 +21,13 @@ html {
 
 body {
   font-family: var(--montserrat-font);
-  color: var(--golden-color);
+  color: var(--black-color);
+  font-size: 16px;
+  line-height: 1.2;
 }
 .container {
   margin: 0 auto;
-  width: 1200px;
+  width: 940px;
 }
 p {
   margin: 0;
@@ -37,6 +39,9 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+a {
+  text-decoration: none;
 }
 .visually-hidden:not(:focus):not(:active),
 input[type="”checkbox”"].visually-hidden,
@@ -58,3 +63,109 @@ input[type="”radio”"].visually-hidden {
   justify-content: space-between;
 }
 
+/* Header */
+header .flex {
+  align-items: center;
+}
+header .container {
+  margin-top: 53px;
+}
+.site-logo {
+  font-family: var(--oleo-font);
+  font-size: 1.6rem;
+  color: var(--golden-color);
+}
+
+.nav-list {
+  width: 485px;
+}
+.nav-list-item {
+  font-family: var(--montserrat-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--black-color);
+  text-transform: uppercase;
+  transition: color 0.2s linear;
+}
+
+.nav-list-item:hover {
+  color: var(--golden-color);
+}
+/* Main */
+
+.services{
+  margin-top: 126px;
+}
+
+.section-title{
+  text-align: center;
+  text-transform: uppercase;
+  font-family: var(--montserrat-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  color: var(--black-color);
+}
+.title-sub{
+  font-family: var(--goudy-font);
+  font-style: italic;
+  font-weight: 400;
+  color: #929292;
+  text-align: center;
+  font-size: 16px;
+  line-height: 19px;
+  margin-top: 14px;
+}
+
+.services-list{
+  margin-top: 80px;
+}
+.services-item{
+  width: 290px;
+}
+.services-icon::before{
+  content: '';
+  display: block;
+  width: 70px;
+  height: 70px;
+  border: 3px solid var(--golden-color);
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+}
+.services-commerce::before{
+  background-image: url(../img/icons/Icon-Basket.png);
+}
+.services-responsive::before{
+  background-image: url(../img/icons/Icon-Laptop.png);
+}
+.services-web::before{
+  background-image: url(../img/icons/Icon-Locked.png);
+}
+
+.services-item-title{
+  font-family: var(--montserrat-font);
+  font-style: normal;
+  font-weight: 700;
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 18px;
+  line-height: 22px;
+  margin-top: 26px;
+}
+
+.services-item-description{
+  font-family: var(--roboto-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #777777;
+  margin-top: 12px;
+  padding-bottom: 119px;
+}
