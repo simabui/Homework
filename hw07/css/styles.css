@@ -4,7 +4,7 @@
   --golden-color: #fed136;
   --black-color: #222222;
   --montserrat-font: "Montserrat", sans-serif;
-  --oleo-font: "Oleo Script", sans-serif;
+  --greatvibes-font: "Great Vibes", serif;
   --roboto-font: "Roboto Slab", serif;
   --goudy-font: "Goudy Bookletter 1911", serif;
 }
@@ -71,7 +71,10 @@ header .container {
   margin-top: 53px;
 }
 .site-logo {
-  font-family: var(--oleo-font);
+  font-family: var(--greatvibes-font);
+  font-style: normal;
+  font-weight: 400;
+  text-transform: capitalize;
   font-size: 1.6rem;
   color: var(--golden-color);
 }
@@ -196,6 +199,7 @@ footer .section-title {
 }
 .form-input{
   flex: 1;
+  text-align: left;
 }
 input{
   width: 455px;
