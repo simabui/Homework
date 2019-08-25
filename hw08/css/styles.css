@@ -100,7 +100,6 @@ header {
 .nav-list {
   display: inline-flex;
   justify-content: space-around;
-  order: 1;
 }
 .nav-list-item {
   font-family: var(--montserrat-font);
@@ -126,6 +125,7 @@ header {
   font-family: var(--roboto-font);
   font-size: 1.28rem;
   font-weight: 300;
+  opacity: 0.5;
   color: var(--white-color);
 }
 
@@ -135,4 +135,35 @@ header {
   border-radius: 30px;
   padding: 13px 45px;
   margin-top: 20px;
+}
+
+@media (min-width: 768px){
+  .header-back{
+    height: 700px;
+  }
+  .container{
+    width: 748px;
+  }
+  .navigation{
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 160px;
+  }
+  .site-logo{
+    margin: 0;
+    order: unset;
+  }
+  .header-title{
+    font-size: 52px;
+    width: 492px;
+    margin: 0 auto;
+  }
+  .header-title_sub{
+    font-size: 24px;
+    margin-top: 30px;
+  }
+
+  .header-button{
+    margin-top: 35px;
+  }
 }
