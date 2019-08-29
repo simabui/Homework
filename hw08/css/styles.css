@@ -215,16 +215,11 @@ header {
   margin-top: 9px;
 }
 
-/* Footer */
-
-footer{
-  text-align: center;
-  padding-bottom: 57px;
-}
 .footer-button{
   color: #ff4e50;
   background-color: rgba(255, 255, 255,1);
   margin-top: 25px;
+  margin-bottom: 57px;
 }
 /* TABLET */
 @media (min-width: 768px){
@@ -280,6 +275,9 @@ footer{
   .partner-list-item:nth-child(4){
     order: 4;
   }
+  .footer-button{
+    margin-bottom: 40px;
+  }
 }
 
 /* DESKTOP */
@@ -292,5 +290,9 @@ footer{
 
   .partner-list{
     width: 940px;
+  }
+
+  .footer-button{
+    margin-bottom: 72px;
   }
 }
