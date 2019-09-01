@@ -88,9 +88,6 @@ header {
   min-height: 540px;
 }
 
-.navigation {
-  margin-top: 40px;
-}
 .site-logo {
   font-family: var(--montserrat-font);
   font-weight: 700;
@@ -121,7 +118,7 @@ header {
 .header-title {
   font-family: var(--montserrat-font);
   font-weight: 700;
-  font-size: 29px;
+  font-size: 25px;
   text-transform: uppercase;
   color: var(--white-color);
 }
@@ -225,19 +222,17 @@ header {
   .header-back {
     height: 700px;
   }
+
   /* .container {
     width: 660px;
   } */
-  .navigation {
-    margin-bottom: 160px;
-  }
   .mt {
     margin: 0;
   }
   .header-title {
     font-size: 52px;
     width: 504px;
-    margin: 0 auto;
+    margin: 160px auto 0;
   }
   .header-title_sub {
     font-size: 24px;
@@ -247,14 +242,6 @@ header {
   .header-button {
     margin-top: 35px;
     width: 224px;
-  }
-
-  .partner-list {
-    /* display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; */
-    width: 492px;
-    margin: 0 auto;
   }
 
   .partner-list-item {
@@ -269,14 +256,6 @@ header {
 /* DESKTOP */
 
 @media (min-width: 1440px) {
-  /* .container {
-    width: 940px;
-    padding: 0;
-  } */
-
-  .partner-list {
-    width: 940px;
-  }
 
   .footer-button {
     margin-bottom: 72px;

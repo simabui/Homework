@@ -24,9 +24,9 @@ html {
   border: 1px solid transparent;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 320px) {
   .container {
-    max-width: 540px;
+    max-width: 284px;
   }
 }
 
@@ -36,11 +36,6 @@ html {
   }
 }
 
-@media (min-width: 992px) {
-  .container {
-    max-width: 960px;
-  }
-}
 
 @media (min-width: 1200px) {
   .container {
