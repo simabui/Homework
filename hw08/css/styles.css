@@ -71,6 +71,7 @@ input[type="”radio”"].visually-hidden {
   border-radius: 30px;
   padding: 13px 13px;
   width: 100%;
+  outline: none;
 }
 /* Header */
 header {
