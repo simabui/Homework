@@ -77,15 +77,16 @@ input[type="”radio”"].visually-hidden {
 header {
   text-align: center;
 }
+
 .header-back {
   background-image: linear-gradient(
-      to right,
-      rgba(26, 25, 21, 0.3),
-      rgba(26, 25, 21, 0.3) 
-    ),
-    url(../img/People.jpg);
+          to right,
+          rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+  ),url(../img/People.jpg);
   background-size: cover;
   background-position: center top;
+  background-repeat: no-repeat;
   min-height: 540px;
 }
 
