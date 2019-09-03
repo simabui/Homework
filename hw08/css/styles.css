@@ -172,20 +172,16 @@ header {
 }
 
 .partner-1_icon::after {
-  background: url(../img/icons/icon_1.png) center no-repeat;
-  background-color: red;
+  background: url(../img/icons/icon_1.png) center no-repeat #FF0000;
 }
 .partner-2_icon::after {
-  background: url(../img/icons/icon_2.png) center no-repeat;
-  background-color: #ffa507;
+  background: url(../img/icons/icon_2.png) center no-repeat #ffa507;
 }
 .partner-3_icon::after {
-  background: url(../img/icons/icon_3.png) center no-repeat;
-  background-color: #1cd7ad;
+  background: url(../img/icons/icon_3.png) center no-repeat  #1cd7ad;
 }
 .partner-4_icon::after {
-  background: url(../img/icons/icon_4.png) center no-repeat;
-  background-color: #4e73db;
+  background: url(../img/icons/icon_4.png) center no-repeat #4e73db;
 }
 
 .partner-photo_icon::after {
