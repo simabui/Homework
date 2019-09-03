@@ -39,14 +39,10 @@ html {
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 1140px;
+      max-width: 940px;
   }
 }
-@media (min-width: 1140px) {
-    .container {
-      max-width: 940px;
-    }  
-}
+
 
 .container-fluid {
   width: 100%;
