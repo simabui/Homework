@@ -308,11 +308,11 @@ header {
 }
 
 /* DESKTOP */
-
 @media (min-width: 1440px) {
-    .header-back{
+    .header-back {
         background-image: url(../img/people-desktop.png);
     }
+
     .container {
         width: 940px;
         padding: 0;
