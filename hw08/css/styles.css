@@ -89,10 +89,8 @@ header {
 }
 
 .header-back {
-    background-image: linear-gradient(
-            to right, rgba(0, 0, 0, 0.3),
-            rgba(0, 0, 0, 0.3)
-    ), url(../img/People.jpg);
+    background-image: url(../img/people-mobile.png);
+    background-color: rgba(0, 0, 0, 0.75);
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
@@ -240,6 +238,7 @@ header {
 /* TABLET */
 @media (min-width: 768px) {
     .header-back {
+        background-image: url(../img/people-tablet.png);
         height: 700px;
     }
 
@@ -311,6 +310,9 @@ header {
 /* DESKTOP */
 
 @media (min-width: 1440px) {
+    .header-back{
+        background-image: url(../img/people-desktop.png);
+    }
     .container {
         width: 940px;
         padding: 0;
