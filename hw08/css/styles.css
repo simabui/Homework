@@ -331,10 +331,6 @@ header {
 /*RETINA*/
 @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .header-back {
-        background-image: linear-gradient(
-                to right,
-                rgba(26, 25, 21, 0.3),
-                rgba(26, 25, 21, 0.3)
-        ), url(../img/people@2x.jpg);
+        background-image: url(../img/people@2x.png);
     }
 }
