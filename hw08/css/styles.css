@@ -235,6 +235,14 @@ header {
     margin-bottom: 57px;
 }
 
+/*RETINA*/
+/*@media (min-resolution: 192dpi), (min-resolution: 2dppx) {*/
+/*    .header-back{*/
+/*        background-image: url(../img/people@2x.jpg);*/
+/*        background-size: 200px 200px;;*/
+/*    }*/
+/*}*/
+
 /* TABLET */
 @media (min-width: 768px) {
     .header-back {
@@ -310,7 +318,7 @@ header {
 /* DESKTOP */
 @media (min-width: 1440px) {
     .header-back {
-        background-image: url(../img/people-desktop.png);
+        /*background-image: url(../img/people-desktop.png);*/
     }
 
     .container {
