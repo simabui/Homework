@@ -136,7 +136,7 @@ header {
     fill: #fce38a;
 }
 .header__container{
-    width: 821px;
+    max-width: 821px;
     margin: 164px auto 0 auto;
     text-align: center;
 }
@@ -226,6 +226,44 @@ header {
     color: #999999;
 }
 
-/*.services {*/
-/*    margin-bottom: 56px;*/
-/*}*/
+/*Tablet*/
+
+@media screen and (max-width: 768px){
+    header{
+        height: 700px;
+    }
+    .logo{
+        text-align: center;
+    }
+    .header__sub-title{
+        font-size: 36px;
+    }
+    .header__title{
+        font-size: 75px;
+        line-height: 70px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    header{
+        height: 600px;
+    }
+    .header__container{
+        margin-top: 50px;
+    }
+    .header__title{
+        font-size: 40px;
+        line-height: 40px;
+    }
+}
+
+/*RETINA*/
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    header {
+        background-image: linear-gradient(
+                to top,
+                rgba(230, 204, 128, 0.9) 0%,
+                rgba(238, 136, 137, 0.9) 100%
+        ),url(../img/background@2x.png);
+    }
+}
