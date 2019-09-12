@@ -48,6 +48,11 @@ ul {
     text-transform: uppercase;
 }
 
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 .visually-hidden:not(:focus):not(:active),
 input[type="”checkbox”"].visually-hidden,
 input[type="”radio”"].visually-hidden {
@@ -237,6 +242,41 @@ header {
     margin: 0 auto;
     width: 81.6666%;
 }
+/*TEAM section*/
+
+.team__item{
+    text-align: center;
+}
+
+.team__name{
+    font-family: var(--montserrat-font);
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+}
+
+.l-name{
+    margin-top: 30px;
+}
+
+.team__position{
+    font-family: var(--roboto-font);
+    font-style: italic;
+    font-size: 15px;
+    color: #999999;
+}
+
+.l-position{
+    margin-top: 16px;
+}
+.social{
+    display: block;
+}
+.team__photo{
+    position: relative;
+    box-shadow: 10px 10px 2px 0 #95e1d3;
+}
 /*Tablet*/
 
 @media screen and (max-width: 768px){
@@ -255,7 +295,9 @@ header {
     }
 }
 
-@media screen and (max-width: 768px){
+/*Phone*/
+
+@media screen and (max-width: 320px){
     header{
         height: 600px;
     }
