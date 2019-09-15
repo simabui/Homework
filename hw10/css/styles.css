@@ -396,6 +396,14 @@ header {
 
 @media screen and (max-width: 768px) {
     header {
+        background: linear-gradient(
+                to top,
+                rgba(230, 204, 128, 0.9) 0%,
+                rgba(238, 136, 137, 0.9) 100%
+        ), url(../img/background-tablet.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
         height: 700px;
     }
 
@@ -425,12 +433,19 @@ header {
     }
 }
 
-
+/*Mobile*/
 @media screen and (min-width: 320px) and (max-width: 767px) {
     header {
-        height: 600px;
+        background: linear-gradient(
+                to top,
+                rgba(230, 204, 128, 0.9) 0%,
+                rgba(238, 136, 137, 0.9) 100%
+        ), url(../img/background-mobile.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 500px;
     }
-
     .header__container {
         margin-top: 50px;
     }
