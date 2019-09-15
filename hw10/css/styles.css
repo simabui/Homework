@@ -210,7 +210,7 @@ header {
     height: 38px;
 }
 
-.services__desctiption {
+.services__description {
     margin-left: 16px;
 }
 
@@ -238,7 +238,7 @@ header {
 
 }
 
-.lg-section-grid{
+.lg-section-grid {
     text-align: center;
 }
 
@@ -330,7 +330,7 @@ header {
 
 .team__photo:hover {
     box-shadow: 10px 10px 2px 0 #95e1d3;
-    transform: translate(-10px,-10px);
+    transform: translate(-10px, -10px);
 }
 
 .team__photo:hover .social {
@@ -340,32 +340,35 @@ header {
 .team__photo:hover::after {
     opacity: 0.9;
 }
+
 /*Footer*/
-.footer__border{
+.footer__border {
     border-top: 1px solid #cccccc;
 }
-.footer__copyright{
+
+.footer__copyright {
     font-family: var(--montserrat-font);
     font-size: 14px;
     font-weight: 400;
     color: var(--secondary-color)
 }
 
-.footer__link--red{
+.footer__link--red {
     color: #f48989;
     text-decoration: none;
 }
 
-.footer__form{
+.footer__form {
     display: flex;
     justify-content: flex-end;
 }
 
-.footer__input{
-   width: 40.42%;
+.footer__input {
+    width: 40.42%;
+    border: 1px solid #bababa;
 }
 
-.footer__input::placeholder{
+.footer__input::placeholder {
     font-family: var(--secondary-font);
     font-weight: 400;
     font-style: italic;
@@ -373,9 +376,10 @@ header {
     padding: 14px;
 }
 
-.button--green{
+.button--green {
     background-color: #95e1d3;
 }
+
 /*Desktop*/
 @media screen and (min-width: 1025px) {
     .lg-margin-top {
@@ -386,7 +390,8 @@ header {
         margin: 0 auto;
         width: 81.6666%;
     }
-    .header__title{
+
+    .header__title {
         font-size: 150px;
         line-height: 140px;
     }
@@ -400,7 +405,7 @@ header {
                 to top,
                 rgba(230, 204, 128, 0.9) 0%,
                 rgba(238, 136, 137, 0.9) 100%
-        ), url(../img/background-tablet.png);
+        ), url(../img/background@0,5x.png);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -420,15 +425,15 @@ header {
         line-height: 70px;
     }
 
-    .social{
+    .social {
         position: static;
         display: block;
         opacity: 1;
-        transform: translate(0%,0%);
+        transform: translate(0%, 0%);
         margin: 0 auto;
     }
 
-    .social__item{
+    .social__item {
         flex: 1;
     }
 }
@@ -440,12 +445,13 @@ header {
                 to top,
                 rgba(230, 204, 128, 0.9) 0%,
                 rgba(238, 136, 137, 0.9) 100%
-        ), url(../img/background-mobile.png);
+        ), url(../img/background@0,25x.png);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
         height: 500px;
     }
+
     .header__container {
         margin-top: 50px;
     }
@@ -455,25 +461,35 @@ header {
         line-height: 40px;
     }
 
-    .services__icon{
+    .services__icon {
         width: 200px;
     }
 
-    .social{
+    .team__photo img{
+        width: 100%;
+    }
+    .team__item {
+        margin-top: 20px;
+    }
+
+    .social {
         position: static;
         display: block;
         opacity: 1;
-        transform: translate(0%,0%);
+        transform: translate(0%, 0%);
         margin: 0 auto;
     }
 
+    footer {
+        margin-top: 10px;
+    }
 
-    .footer__form{
+    .footer__form {
         flex-direction: column;
     }
-    .footer__input{
+
+    .footer__input {
         width: 100%;
-        border: 1px solid #bababa;
         margin: 10px 0;
         padding: 15px;
     }

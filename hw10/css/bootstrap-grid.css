@@ -24,24 +24,18 @@ html {
   border: 1px solid transparent;
 }
 
-@media (min-width: 320px) {
+@media (min-width: 576px) {
   .container {
-    max-width: 284px;
+    max-width: 540px;
   }
 }
 
 @media (min-width: 768px) {
   .container {
-    max-width: 660px;
+    max-width: 720px;
   }
 }
 
-
-@media (min-width: 1199px) {
-  .container {
-      max-width: 940px;
-  }
-}
 
 @media (min-width: 1200px) {
   .container {
