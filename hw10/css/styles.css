@@ -310,7 +310,7 @@ header {
     height: 57px;
     background-color: #fce38a;
     border: 1px solid #f9bd87;
-
+    flex: 1;
 }
 
 .social__item svg {
@@ -381,7 +381,7 @@ header {
 }
 
 /*Desktop*/
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1024px) {
     .lg-margin-top {
         margin-top: 97px;
     }
@@ -399,7 +399,7 @@ header {
 
 /*Tablet*/
 
-@media screen and (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1023px ) {
     header {
         background: linear-gradient(
                 to top,
@@ -433,9 +433,6 @@ header {
         margin: 0 auto;
     }
 
-    .social__item {
-        flex: 1;
-    }
 }
 
 /*Mobile*/
