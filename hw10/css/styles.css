@@ -9,12 +9,14 @@
 }
 
 html {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
+    -webkit-box-sizing: inherit;
     box-sizing: inherit;
 }
 
@@ -64,6 +66,7 @@ input[type="”radio”"].visually-hidden {
     border: 0;
     padding: 0;
     white-space: nowrap;
+    -webkit-clip-path: inset(100%);
     clip-path: inset(100%);
     clip: rect(0, 0, 0, 0);
     overflow: hidden;
@@ -73,6 +76,17 @@ input[type="”radio”"].visually-hidden {
 /* HEADER */
 header {
     height: 1000px;
+    background: -webkit-gradient(
+            linear,
+            left bottom, left top,
+            from(rgba(230, 204, 128, 0.9)),
+            to(rgba(238, 136, 137, 0.9))
+    ), url(../img/background.png);
+    background: -o-linear-gradient(
+            bottom,
+            rgba(230, 204, 128, 0.9) 0%,
+            rgba(238, 136, 137, 0.9) 100%
+    ), url(../img/background.png);
     background: linear-gradient(
             to top,
             rgba(230, 204, 128, 0.9) 0%,
@@ -90,7 +104,11 @@ header {
 }
 
 .navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -101,6 +119,8 @@ header {
     text-transform: uppercase;
     color: var(--primary-color);
     text-decoration: none;
+    -webkit-transition: color 0.2s linear;
+    -o-transition: color 0.2s linear;
     transition: color 0.2s linear;
     position: relative;
 }
@@ -115,6 +135,8 @@ header {
     background-color: #fce38a;
     margin-top: 12px;
     opacity: 0;
+    -webkit-transition: opacity 0.2s linear;
+    -o-transition: opacity 0.2s linear;
     transition: opacity 0.2s linear;
 }
 
@@ -130,6 +152,8 @@ header {
     width: 18px;
     height: 18px;
     fill: var(--primary-color);
+    -webkit-transition: fill 0.2s linear;
+    -o-transition: fill 0.2s linear;
     transition: fill 0.2s linear;
 }
 
@@ -201,7 +225,11 @@ header {
 }
 
 .services {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -273,7 +301,11 @@ header {
 
 .team__photo {
     position: relative;
+    -webkit-transition: -webkit-box-shadow 0.2s linear, -webkit-transform 0.2s linear;
+    transition: -webkit-box-shadow 0.2s linear, -webkit-transform 0.2s linear;
+    -o-transition: box-shadow 0.2s linear, transform 0.2s linear;
     transition: box-shadow 0.2s linear, transform 0.2s linear;
+    transition: box-shadow 0.2s linear, transform 0.2s linear, -webkit-box-shadow 0.2s linear, -webkit-transform 0.2s linear;
 }
 
 .team__photo::after {
@@ -284,7 +316,11 @@ header {
     width: 100%;
     height: 100%;
     opacity: 0;
+    background: -webkit-gradient(linear, left bottom, left top, from(rgb(230, 204, 128)), to(rgb(238, 136, 137)));
+    background: -o-linear-gradient(bottom, rgb(230, 204, 128) 0%, rgb(238, 136, 137) 100%);
     background: linear-gradient(to top, rgb(230, 204, 128) 0%, rgb(238, 136, 137) 100%);
+    -webkit-transition: opacity 0.2s linear;
+    -o-transition: opacity 0.2s linear;
     transition: opacity 0.2s linear;
 }
 
@@ -293,23 +329,37 @@ header {
     position: absolute;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     z-index: 1;
+    -webkit-transition: opacity 0.2s linear;
+    -o-transition: opacity 0.2s linear;
     transition: opacity 0.2s linear;
 }
 
 .social__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
 .social__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     width: 57px;
     height: 57px;
     background-color: #fce38a;
     border: 1px solid #f9bd87;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
     flex: 1;
 }
 
@@ -329,7 +379,10 @@ header {
 }
 
 .team__photo:hover {
+    -webkit-box-shadow: 10px 10px 2px 0 #95e1d3;
     box-shadow: 10px 10px 2px 0 #95e1d3;
+    -webkit-transform: translate(-10px, -10px);
+    -ms-transform: translate(-10px, -10px);
     transform: translate(-10px, -10px);
 }
 
@@ -359,13 +412,49 @@ header {
 }
 
 .footer__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: flex-end;
 }
 
 .footer__input {
     width: 40.42%;
     border: 1px solid #bababa;
+}
+
+.footer__input::-webkit-input-placeholder {
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-style: italic;
+    color: #cccccc;
+    padding: 14px;
+}
+
+.footer__input::-moz-placeholder {
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-style: italic;
+    color: #cccccc;
+    padding: 14px;
+}
+
+.footer__input:-ms-input-placeholder {
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-style: italic;
+    color: #cccccc;
+    padding: 14px;
+}
+
+.footer__input::-ms-input-placeholder {
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-style: italic;
+    color: #cccccc;
+    padding: 14px;
 }
 
 .footer__input::placeholder {
@@ -401,6 +490,17 @@ header {
 
 @media (max-width: 1023px ) {
     header {
+        background: -webkit-gradient(
+                linear,
+                left bottom, left top,
+                from(rgba(230, 204, 128, 0.9)),
+                to(rgba(238, 136, 137, 0.9))
+        ), url(../img/background@0,5x.png);
+        background: -o-linear-gradient(
+                bottom,
+                rgba(230, 204, 128, 0.9) 0%,
+                rgba(238, 136, 137, 0.9) 100%
+        ), url(../img/background@0,5x.png);
         background: linear-gradient(
                 to top,
                 rgba(230, 204, 128, 0.9) 0%,
@@ -429,6 +529,8 @@ header {
         position: static;
         display: block;
         opacity: 1;
+        -webkit-transform: translate(0%, 0%);
+        -ms-transform: translate(0%, 0%);
         transform: translate(0%, 0%);
         margin: 0 auto;
     }
@@ -438,6 +540,17 @@ header {
 /*Mobile*/
 @media screen and (max-width: 767px) {
     header {
+        background: -webkit-gradient(
+                linear,
+                left bottom, left top,
+                from(rgba(230, 204, 128, 0.9)),
+                to(rgba(238, 136, 137, 0.9))
+        ), url(../img/background@0,25x.png);
+        background: -o-linear-gradient(
+                bottom,
+                rgba(230, 204, 128, 0.9) 0%,
+                rgba(238, 136, 137, 0.9) 100%
+        ), url(../img/background@0,25x.png);
         background: linear-gradient(
                 to top,
                 rgba(230, 204, 128, 0.9) 0%,
@@ -473,6 +586,8 @@ header {
         position: static;
         display: block;
         opacity: 1;
+        -webkit-transform: translate(0%, 0%);
+        -ms-transform: translate(0%, 0%);
         transform: translate(0%, 0%);
         margin: 0 auto;
     }
@@ -482,6 +597,9 @@ header {
     }
 
     .footer__form {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
 
@@ -493,8 +611,19 @@ header {
 }
 
 /*RETINA*/
-@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     header {
+        background-image: -webkit-gradient(
+                linear,
+                left bottom, left top,
+                from(rgba(230, 204, 128, 0.9)),
+                to(rgba(238, 136, 137, 0.9))
+        ), url(../img/background@2x.png);
+        background-image: -o-linear-gradient(
+                bottom,
+                rgba(230, 204, 128, 0.9) 0%,
+                rgba(238, 136, 137, 0.9) 100%
+        ), url(../img/background@2x.png);
         background-image: linear-gradient(
                 to top,
                 rgba(230, 204, 128, 0.9) 0%,
