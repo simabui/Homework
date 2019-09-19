@@ -103,7 +103,7 @@ header {
     color: var(--primary-color);
 }
 
-.navigation {
+.navigation__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -171,7 +171,7 @@ header {
     text-align: center;
 }
 
-.header__sub-title {
+.header__subtitle {
     font-family: var(--kaushan-font);
     color: var(--primary-color);
     font-size: 72px;
@@ -201,13 +201,13 @@ header {
     margin-top: 100px;
 }
 
-.section__sub-title {
+.section__title--sub {
     font-family: var(--kaushan-font);
     font-size: 24px;
     font-weight: 400;
 }
 
-.section__main-title {
+.section__title--main {
     font-family: var(--montserrat-font);
     font-size: 30px;
     font-weight: 700;
