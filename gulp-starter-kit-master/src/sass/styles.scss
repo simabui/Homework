@@ -1,0 +1,12 @@
+//Utils
+@import "variables";
+@import "mixins";
+//Base styles
+@import "bootstrap-grid";
+@import 'normalize';
+@import "fonts";
+
+body{
+  background-color: $secondary-color;
+  color: $primary-color;
+}
