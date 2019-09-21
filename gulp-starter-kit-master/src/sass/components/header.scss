@@ -38,20 +38,17 @@ header {
 }
 
 .header__title {
+  @include font-settings(75px,70px);
   font-family: $montserrat-font;
   color: $primary-color;
-  font-size: 75px;
-  line-height: 70px;
   font-weight: 700;
   text-transform: uppercase;
   margin-top: 42px;
   @media screen and (min-width: 1024px) {
-    font-size: 150px;
-    line-height: 140px;
+    @include font-settings(150px,140px);
   }
   @media screen and (max-width: 767px) {
-    font-size: 40px;
-    line-height: 40px;
+    @include font-settings(40px,40px);
   }
 }
 

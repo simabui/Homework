@@ -1,0 +1,50 @@
+
+.footer__border {
+  border-top: 1px solid $gray-color;
+}
+
+.footer__copyright {
+  font-family: $montserrat-font;
+  font-size: 14px;
+  font-weight: 400;
+  color: $secondary-color;
+}
+
+.footer__link--red {
+  color: #f48989;
+  text-decoration: none;
+}
+
+.footer__form {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer__input {
+  width: 40.42%;
+  border: 1px solid #bababa;
+  
+  &::placeholder {
+    font-family: $secondary-font;
+    font-weight: 400;
+    font-style: italic;
+    color: #cccccc;
+    padding: 14px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  footer {
+    margin-top: 10px;
+  }
+  
+  .footer__form {
+    flex-direction: column;
+  }
+  
+  .footer__input {
+    width: 100%;
+    margin: 10px 0;
+    padding: 15px;
+  }
+}

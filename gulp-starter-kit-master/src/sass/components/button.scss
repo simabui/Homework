@@ -4,3 +4,7 @@
   background: transparent;
   border: 2px solid #fff;
 }
+.button--green {
+  @extend %button;
+  background-color: #95e1d3;
+}

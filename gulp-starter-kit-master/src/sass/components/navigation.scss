@@ -12,6 +12,7 @@
   color: $primary-color;
   text-decoration: none;
   position: relative;
+  
   &::after {
     @include pseudo(block);
     @include transition(opacity);
@@ -23,9 +24,11 @@
     margin-top: 12px;
     opacity: 0;
   }
+  
   &:hover {
     color: $hover-color;
   }
+  
   &:hover::after {
     opacity: 1;
   }
@@ -36,8 +39,9 @@
   width: 18px;
   height: 18px;
   fill: $primary-color;
-  &:hover svg {
-    fill: $hover-color;
-  }
+}
+
+.navigation__icon:hover svg {
+  fill: $hover-color;
 }
 
