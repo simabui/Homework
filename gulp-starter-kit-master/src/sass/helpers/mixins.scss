@@ -8,7 +8,7 @@
   }
 }
 
-@mixin font-settings($size, $height) {
+@mixin font-settings($size, $height: 1.2) {
   font-size: $size;
   line-height: $height;
 }
@@ -19,7 +19,11 @@
 }
 
 @mixin bg-image($path: '', $size: cover, $repeat: no-repeat, $pos: center) {
-  background-image: url($path);
+  background-image: linear-gradient(
+      to top,
+      rgba(230, 204, 128, 0.9) 0%,
+      rgba(238, 136, 137, 0.9) 100%
+  ),url($path);
   background-size: $size;
   background-repeat: $repeat;
   background-position: $pos;
@@ -37,7 +41,9 @@
     align-items: center;
   }
 }
-
+@mixin transition($property){
+  transition: $property 0.2s linear;
+}
 @mixin generate-pseudo-icons($baseclass, $list, $path, $ext) {
   @each $icon in $list {
     .#{$baseclass}#{$icon}::before {

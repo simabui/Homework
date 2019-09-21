@@ -17,6 +17,7 @@ const babel = require('gulp-babel');
 const uglify = require('gulp-uglify');
 const concat = require('gulp-concat');
 const rename = require('gulp-rename');
+const cache = require('gulp-cache');
 const server = require('browser-sync').create();
 
 function html() {
@@ -58,6 +59,7 @@ function scripts() {
 function sprite() {
   return src('src/images/icons/**/icon-*.svg')
     .pipe(svgstore({inlineSvg: true}))
+    // TODO: make different paths
     .pipe(rename('sprite.svg'))
     .pipe(dest('build/images/icons'));
 }
@@ -65,13 +67,13 @@ function sprite() {
 function images() {
   return src(['src/images/**/*.{png,jpg,jpeg,svg}', '!src/images/icons/**/*'])
     .pipe(
-      imagemin([
+      cache(imagemin([
         imagemin.jpegtran({progressive: true}),
         imagemin.optipng({optimizationLevel: 3}),
         imagemin.svgo({
           plugins: [{removeViewBox: false}, {cleanupIDs: false}],
         }),
-      ]),
+      ])),
     )
     .pipe(dest('build/images'));
 }

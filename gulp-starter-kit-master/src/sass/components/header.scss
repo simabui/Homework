@@ -1,0 +1,57 @@
+header {
+  height: 1000px;
+  @include bg-image($path: '../images/background.png');
+  @media screen and (max-width: 1023px) {
+    @include bg-image($path: '../images/background@0,5x.png');
+    height: 700px;
+  }
+  @media screen and (max-width: 767px) {
+    @include bg-image($path: '../images/background@0,25x.png');
+    height: 500px;
+  }
+  @media screen and (min-resolution: 192dpi), (min-resolution: 2dppx){
+    @include bg-image($path: '../images/background@2x.png')
+  }
+}
+
+.header__container {
+  max-width: 821px;
+  margin: 164px auto 0 auto;
+  text-align: center;
+  @media screen and (max-width: 767px) {
+    margin-top: 50px;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.header__subtitle {
+  @include font-settings(72px);
+  font-family: $kaushan-font;
+  color: $primary-color;
+  font-weight: 400;
+  @media screen and (max-width: 1023px) {
+    font-size: 36px;
+  }
+}
+
+.header__title {
+  font-family: $montserrat-font;
+  color: $primary-color;
+  font-size: 75px;
+  line-height: 70px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 42px;
+  @media screen and (min-width: 1024px) {
+    font-size: 150px;
+    line-height: 140px;
+  }
+  @media screen and (max-width: 767px) {
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+

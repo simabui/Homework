@@ -1,0 +1,6 @@
+.button--header {
+  @extend %button;
+  margin-top: 125px;
+  background: transparent;
+  border: 2px solid #fff;
+}
