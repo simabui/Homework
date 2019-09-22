@@ -107,9 +107,7 @@ function clean() {
   return del('./build');
 }
 
-function prepare() {
-  return del(['**/.gitkeep', 'README.md']);
-}
+
 
 const build = series(
   clean,
@@ -118,6 +116,6 @@ const build = series(
 
 const start = series(build, watcher, serve);
 
-exports.prepare = prepare;
+// exports.prepare = prepare;
 exports.build = build;
 exports.start = start;
