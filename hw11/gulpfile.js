@@ -59,7 +59,6 @@ function scripts() {
 function sprite() {
   return src('src/images/icons/**/*.svg')
     .pipe(svgstore({inlineSvg: true}))
-    // TODO: make different paths
     .pipe(rename('sprite.svg'))
     .pipe(dest('build/images/icons'));
 }
