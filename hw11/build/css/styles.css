@@ -1481,6 +1481,7 @@ header {
 
 .button--green {
   background-color: #95e1d3;
+  border: none;
 }
 
 .section__title {

@@ -6,5 +6,6 @@
 }
 .button--green {
   @extend %button;
-  background-color: #95e1d3;
+  background-color: $icon-color;
+  border: none;
 }
