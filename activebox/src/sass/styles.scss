@@ -2,21 +2,10 @@
 @import "helpers/variables";
 @import "helpers/placeholders";
 @import "helpers/mixins";
-
+@import "helpers/smart-grid";
 //Base styles
-@import "bootstrap-grid";
 @import 'normalize';
 @import "fonts";
 @import "base";
 
 //Components
-@import "components/header";
-@import "components/logo";
-@import "components/navigation";
-@import "components/button";
-@import "components/section";
-@import "components/services";
-@import "components/team";
-@import "components/social";
-@import "components/footer";
-

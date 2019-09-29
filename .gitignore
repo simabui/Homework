@@ -5,3 +5,5 @@
 # Ignore folders
 node_modules
 
+activebox/build
+
