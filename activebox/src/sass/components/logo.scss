@@ -1,0 +1,9 @@
+.logo {
+  @include font-settings(30px);
+  font-family: $montserrat-font;
+  font-weight: 700;
+  color: $primary-color;
+  @media screen and (max-width: 1023px) {
+    text-align: center;
+  }
+}

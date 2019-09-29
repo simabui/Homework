@@ -1,0 +1,34 @@
+.services {
+  display: flex;
+  justify-content: space-between;
+}
+
+.services__icon {
+  width: 72px;
+  height: 38px;
+}
+
+.services__description {
+  margin-left: 16px;
+}
+
+.services__title {
+  font-family: var(--montserrat-font);
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: var(--secondary-color);
+  margin-bottom: 15px;
+}
+
+.services__text {
+  font-family: var(--roboto-font);
+  font-weight: 400;
+  font-size: 15px;
+  color: #999999;
+}
+@media screen and (max-width: 767px){
+  .services__icon {
+        width: 200px;
+      }
+}
