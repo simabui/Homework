@@ -47,7 +47,7 @@ var settings = {
   }
 };
 
-smartgrid('./src/helpers/sass', settings);
+smartgrid('./src/sass/helpers', settings);
 
 function pugs(){
   return src('src/pug/index.pug')

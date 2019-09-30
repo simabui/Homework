@@ -7,7 +7,8 @@ header
       nav.navigation
         ul.navigation__list
           each n in ['features', 'works','our team', 'testimonials', 'download']
-            li.navigation__item=n
+            li.navigation__item
+              a(href="#")=n
           else
             li No value
 

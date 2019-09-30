@@ -40,5 +40,12 @@ header{
   font-size: 13px;
   font-weight: 700;
   text-transform: uppercase;
-  color: $white-color;
+  a{
+    @extend %link;
+    @include transition(color);
+    color: $white-color;
+  }
+  a:hover{
+    color: $secondary-color;
+  }
 }

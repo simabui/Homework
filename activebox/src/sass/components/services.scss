@@ -1,34 +1,51 @@
-.services {
-  display: flex;
-  justify-content: space-between;
+.services__list {
+  @include row-flex;
+  margin-top: 119px;
+  padding-bottom: 88px;
+  @include sm(margin-top, 50px);
 }
 
-.services__icon {
-  width: 72px;
-  height: 38px;
+.services__item {
+  @include col();
+  @include size(4);
+  @include size-md(6);
+  @include size-sm(12);
+  @include md(margin-top, 40px);
+  text-align: center;
+  
+  @media screen and (min-width: 1200px){
+    &:nth-last-child(-n+3) {
+      margin-top: 74px;
+    }
+  }
+}
+
+.services__logo {
+  &::before {
+    @include pseudo($display: block);
+    background-size: contain;
+    height: 60px;
+    margin-bottom: 34px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+$icons: pencil, display, lamp, atom, backpack, cloud;
+
+@include generate-pseudo-icons('services__logo--', $icons, '../images/serv/icon-', png);
+
+.services__title {
+  font-family: $main-font;
+  font-size: 14px;
+  font-weight: 700;
+  color: #2d3033;
+  text-transform: uppercase;
 }
 
 .services__description {
-  margin-left: 16px;
-}
-
-.services__title {
-  font-family: var(--montserrat-font);
+  font-family: $main-font;
+  @include font-settings(14px, 21px);
   font-weight: 400;
-  text-transform: uppercase;
-  font-size: 14px;
-  color: var(--secondary-color);
-  margin-bottom: 15px;
-}
-
-.services__text {
-  font-family: var(--roboto-font);
-  font-weight: 400;
-  font-size: 15px;
-  color: #999999;
-}
-@media screen and (max-width: 767px){
-  .services__icon {
-        width: 200px;
-      }
+  margin-top: 25px;
 }
