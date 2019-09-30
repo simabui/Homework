@@ -1,54 +1,44 @@
-header {
-  height: 1000px;
-  @include bg-image($path: '../images/background.png');
-  @media screen and (max-width: 1023px) {
-    @include bg-image($path: '../images/background@0,5x.png');
-    height: 700px;
-  }
-  @media screen and (max-width: 767px) {
-    @include bg-image($path: '../images/background@0,25x.png');
-    height: 500px;
-  }
-  @media screen and (min-resolution: 192dpi), (min-resolution: 2dppx){
-    @include bg-image($path: '../images/background@2x.png')
-  }
+header{
+  background: $background-color;
 }
-
-.header__container {
-  max-width: 821px;
-  margin: 164px auto 0 auto;
-  text-align: center;
-  @media screen and (max-width: 767px) {
-    margin-top: 50px;
-  }
+.wrapper{
+  @include wrapper;
 }
-
-.text-center {
-  text-align: center;
+.h-padding{
+  padding: 38px 0;
 }
-
-.header__subtitle {
-  @include font-settings(72px);
-  font-family: $kaushan-font;
-  color: $primary-color;
-  font-weight: 400;
-  @media screen and (max-width: 1023px) {
-    font-size: 36px;
-  }
+.row{
+  @include row-flex;
+  justify-content: space-between;
 }
-
-.header__title {
-  @include font-settings(75px,70px);
-  font-family: $montserrat-font;
-  color: $primary-color;
+.l-center{
+  align-items: center;
+}
+.logo{
+  @include col();
+  @include size(6);
+  @include size-md(12);
+  @include shift-md-left(4);
+}
+.logo__image{
+  width: 189px;
+  height: 24px;
+}
+.navigation{
+  @include col();
+  @include size(6);
+  @include size-md(12);
+  
+}
+.navigation__list{
+  display: flex;
+  justify-content: space-between;
+}
+.navigation__item{
+  @include md(font-size, 10px);
+  font-family: $main-font;
+  font-size: 13px;
   font-weight: 700;
   text-transform: uppercase;
-  margin-top: 42px;
-  @media screen and (min-width: 1024px) {
-    @include font-settings(150px,140px);
-  }
-  @media screen and (max-width: 767px) {
-    @include font-settings(40px,40px);
-  }
+  color: $white-color;
 }
-
