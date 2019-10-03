@@ -27,7 +27,7 @@ var settings = {
   mobileFirst: false, /* mobileFirst ? 'min-width' : 'max-width' */
   container: {
     maxWidth: '1170px', /* max-width оn very large screen */
-    fields: '30px' /* side fields */
+    fields: '0' /* side fields */
   },
   breakPoints: {
     lg: {
@@ -53,7 +53,7 @@ function pugs(){
   return src('src/pug/index.pug')
     .pipe(pug({
       doctype: 'html',
-      pretty: true
+      pretty: false
     }))
     .pipe(dest('build'));
 }

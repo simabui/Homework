@@ -7,8 +7,10 @@
 @import 'normalize';
 @import "fonts";
 @import "base";
-
 //Components
+@import "components/button";
+@import "components/social";
 @import "components/header";
 @import "components/services";
 @import "components/team";
+@import "components/footer";

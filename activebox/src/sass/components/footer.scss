@@ -1,50 +1,70 @@
-
-.footer__border {
-  border-top: 1px solid $gray-color;
-}
-
-.footer__copyright {
-  font-family: $montserrat-font;
-  font-size: 14px;
-  font-weight: 400;
-  color: $secondary-color;
-}
-
-.footer__link--red {
-  color: #f48989;
-  text-decoration: none;
-}
-
-.footer__form {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.footer__input {
-  width: 40.42%;
-  border: 1px solid #bababa;
+footer {
+  background-color: $background-color;
+  font-family: $main-font;
+  text-align: center;
   
-  &::placeholder {
-    font-family: $secondary-font;
+  .row {
+    padding: 70px 0;
+  }
+  
+}
+
+// social links section
+.links {
+  @include col();
+  @include size(4);
+  @include size-md(6);
+  @include size-xs(12);
+  @include xs(margin-top, 30px);
+  
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    color: $white-color;
+    text-transform: uppercase;
+  }
+  
+  .social {
+    justify-content: center;
+  }
+}
+
+//address section
+.location {
+  @include col();
+  @include size(4);
+  @include size-md(6);
+  @include size-xs(12);
+  @include xs(margin-top, 30px);
+  
+  &__title {
+    font-weight: 700;
+    color: $white-color;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+  
+  &__desctiption {
     font-weight: 400;
-    font-style: italic;
-    color: #cccccc;
-    padding: 14px;
+    font-size: 14px;
+    line-height: 23px;
+    margin-top: 20px;
   }
 }
 
-@media screen and (max-width: 767px) {
-  footer {
-    margin-top: 10px;
+//download section
+.download {
+  @include col();
+  @include size(4);
+  @include size-md(6);
+  @include size-xs(12);
+  @include xs(margin-top, 30px);
+  
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    color: $white-color;
+    text-transform: uppercase;
   }
   
-  .footer__form {
-    flex-direction: column;
-  }
-  
-  .footer__input {
-    width: 100%;
-    margin: 10px 0;
-    padding: 15px;
-  }
 }

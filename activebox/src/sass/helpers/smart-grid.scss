@@ -18,7 +18,7 @@ $offset_md_one_side: ($offset_md / 2);
 $offset_sm_one_side: ($offset_sm / 2);
 $offset_xs_one_side: ($offset_xs / 2);
 
-$fields: 0px;
+$fields: 0;
 $fields_sm: 15px;
 
 @mixin wrapper-full(){
@@ -32,8 +32,8 @@ $fields_sm: 15px;
 }
 
 @mixin row-offsets(){
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: ($offset_one_side * -1);
+    margin-right: ($offset_one_side * -1);
 }
 
 @mixin col-offsets($type){

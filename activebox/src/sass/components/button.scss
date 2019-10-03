@@ -1,11 +1,8 @@
-.button--header {
+
+.download__button{
   @extend %button;
-  margin-top: 125px;
-  background: transparent;
-  border: 2px solid #fff;
-}
-.button--green {
-  @extend %button;
-  background-color: $icon-color;
+  background-color: $secondary-color;
   border: none;
+  padding: 10px 70px;
+  margin-top: 20px;
 }

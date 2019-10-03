@@ -1,9 +1,23 @@
+mixin social()
+  div.social
+    div.social__box
+      a(href="#")
+        svg.social__icon
+          use(href="images/icons/sprite.svg#facebook")
+    div.social__box
+      a(href="#")
+        svg.social__icon
+          use(href="images/icons/sprite.svg#twitter")
+    div.social__box
+      a(href="#")
+        svg.social__icon
+          use(href="images/icons/sprite.svg#linkedIn")
 
 mixin team(name, position, link)
   img(src=`../images/team-photos/team-${link}.jpg`
-      srcset=`../images/team-photos/team-${link}.jpg 300w,` +
-      `../images/team-photos/team-${link}@2x.jpg 540w`
-      sizes="270w" alt=name).team__image
+    srcset=`../images/team-photos/team-${link}.jpg 300w,` +
+    `../images/team-photos/team-${link}@2x.jpg 540w`
+    sizes="270w" alt=name).team__image
   p.team__name
     =name
   p.team__position
@@ -12,19 +26,7 @@ mixin team(name, position, link)
     Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,
     ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius
     blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.
-  div.team__social
-    div.team__social--box
-      a(href="#")
-        svg.team__social--icon
-          use(href="images/icons/sprite.svg#facebook")
-    div.team__social--box
-      a(href="#")
-        svg.team__social--icon
-          use(href="images/icons/sprite.svg#twitter")
-    div.team__social--box
-      a(href="#")
-        svg.team__social--icon
-          use(href="images/icons/sprite.svg#linkedIn")
+  + social
 
 
 section.wrapper

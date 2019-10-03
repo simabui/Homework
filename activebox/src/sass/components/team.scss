@@ -2,7 +2,8 @@
   @include row-flex;
   font-family: $main-font;
   font-weight: 400;
-  
+  padding-bottom: 118px;
+  @include md(padding-bottom, 50px);
   &__list {
     @include col();
     @include size(3);
@@ -38,35 +39,5 @@
     font-size: 14px;
     line-height: 21px;
     margin-top: 25px;
-  }
-  
-  &__social {
-    display: flex;
-    margin-top: 20px;
-    
-    &--box {
-      @include center-flex();
-      width: 40px;
-      height: 40px;
-      border: 1px solid $social-color;
-      
-      &:nth-last-child(-n+2) {
-        margin-left: 5px;
-      }
-      
-      &:hover {
-        .team__social--icon {
-          @include transition(fill);
-          fill: $secondary-color;
-        }
-      }
-    }
-    
-    &--icon {
-      width: 30px;
-      height: 30px;
-      fill: $social-color;
-      padding: 5px;
-    }
   }
 }
