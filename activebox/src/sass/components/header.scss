@@ -11,8 +11,8 @@ header {
 }
 
 .row {
-  @include row-flex;
-  justify-content: space-between;
+  max-width: 1170px;
+  display: flex;
 }
 
 .l-center {

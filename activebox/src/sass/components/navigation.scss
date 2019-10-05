@@ -2,8 +2,8 @@
 .navigation {
   @include col();
   @include size(6);
+  @include size-lg(6);
   @include size-md(12);
-  
 }
 
 .navigation__list {
