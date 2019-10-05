@@ -14,7 +14,7 @@ mixin social()
           use(href="images/icons/sprite.svg#linkedIn")
 
 mixin team(name, position, link)
-  div.team__list
+  div.team__item
     img(src=`images/team-photos/team-${link}.jpg`
       srcset=`images/team-photos/team-${link}.jpg 300w,` +
       `images/team-photos/team-${link}@2x.jpg 540w`
@@ -30,10 +30,11 @@ mixin team(name, position, link)
     + social
 
 
-section.wrapper
+section
   div.team
-    + team('Ruth Woods', 'Founder, Ceo', 1)
-    + team('Timothy Reed', 'Co-Founder, Developer', 2)
-    + team('Victoria Valdez', 'Ui Designer', 3)
-    + team('Beverly Little', 'Data Scientist', 4)
+    div.team__list
+      + team('Ruth Woods', 'Founder, Ceo', 1)
+      + team('Timothy Reed', 'Co-Founder, Developer', 2)
+      + team('Victoria Valdez', 'Ui Designer', 3)
+      + team('Beverly Little', 'Data Scientist', 4)
 

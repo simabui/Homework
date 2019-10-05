@@ -601,6 +601,13 @@ header {
 }
 
 .team {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.team__list {
   display: flex;
   flex-wrap: wrap;
   font-family: "Raleway", sans-serif;
@@ -608,7 +615,7 @@ header {
   padding-bottom: 118px;
 }
 
-.team__list {
+.team__item {
   box-sizing: border-box;
   word-wrap: break-word;
   margin-left: 15px;
@@ -790,15 +797,15 @@ footer .row {
     margin-top: 40px;
   }
 
-  .team {
+  .team__list {
     padding-bottom: 50px;
   }
 
-  .team__list {
+  .team__item {
     width: calc(50% - 30px);
   }
 
-  .team__list {
+  .team__item {
     margin-top: 30px;
   }
 
@@ -829,6 +836,11 @@ footer .row {
   .services {
     margin-top: 50px;
   }
+
+  .team {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 @media screen and (max-width: 560px) {
@@ -836,7 +848,7 @@ footer .row {
     width: calc(100% - 30px);
   }
 
-  .team__list {
+  .team__item {
     width: calc(100% - 30px);
   }
 

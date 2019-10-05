@@ -1,10 +1,15 @@
 .team {
-  @include row-flex;
-  font-family: $main-font;
-  font-weight: 400;
-  padding-bottom: 118px;
-  @include md(padding-bottom, 50px);
+  @include wrapper;
+  
   &__list {
+    @include row-flex;
+    font-family: $main-font;
+    font-weight: 400;
+    padding-bottom: 118px;
+    @include md(padding-bottom, 50px);
+  }
+  
+  &__item {
     @include col();
     @include size(3);
     @include size-md(6);
