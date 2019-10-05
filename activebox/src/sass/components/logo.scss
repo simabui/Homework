@@ -1,9 +1,10 @@
-.logo {
-  @include font-settings(30px);
-  font-family: $montserrat-font;
-  font-weight: 700;
-  color: $primary-color;
-  @media screen and (max-width: 1023px) {
-    text-align: center;
-  }
+.logo{
+  @include col();
+  @include size(6);
+  @include size-md(12);
+  @include shift-md-left(4);
+}
+.logo__image{
+  width: 189px;
+  height: 24px;
 }
