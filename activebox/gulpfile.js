@@ -1,60 +1,62 @@
 'use strict';
 
-const {src, dest, series, parallel, watch} = require('gulp');
-const sass         = require('gulp-sass');
-const postcss      = require('gulp-postcss');
+const { src, dest, series, parallel, watch } = require('gulp');
+const sass = require('gulp-sass');
+const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
-const csso         = require('gulp-csso');
-const gcmq         = require('gulp-group-css-media-queries');
-const del          = require('del');
-const imagemin     = require('gulp-imagemin');
-const svgstore     = require('gulp-svgstore');
-const plumber      = require('gulp-plumber');
-const stylelint    = require('gulp-stylelint');
-const babel        = require('gulp-babel');
-const uglify       = require('gulp-uglify');
-const concat       = require('gulp-concat');
-const rename       = require('gulp-rename');
-const cache        = require('gulp-cache');
-const pug          = require('gulp-pug');
-const smartgrid    = require('smart-grid');
-const server       = require('browser-sync').create();
+const csso = require('gulp-csso');
+const gcmq = require('gulp-group-css-media-queries');
+const del = require('del');
+const imagemin = require('gulp-imagemin');
+const svgstore = require('gulp-svgstore');
+const plumber = require('gulp-plumber');
+const stylelint = require('gulp-stylelint');
+const babel = require('gulp-babel');
+const uglify = require('gulp-uglify');
+const concat = require('gulp-concat');
+const rename = require('gulp-rename');
+const cache = require('gulp-cache');
+const pug = require('gulp-pug');
+const smartgrid = require('smart-grid');
+const server = require('browser-sync').create();
 
 var settings = {
-  outputStyle: 'scss', /* less || scss || sass || styl */
-  columns: 12, /* number of grid columns */
-  offset: '30px', /* gutter width px || % || rem */
-  mobileFirst: false, /* mobileFirst ? 'min-width' : 'max-width' */
+  outputStyle: 'scss' /* less || scss || sass || styl */,
+  columns: 12 /* number of grid columns */,
+  offset: '30px' /* gutter width px || % || rem */,
+  mobileFirst: false /* mobileFirst ? 'min-width' : 'max-width' */,
   container: {
-    maxWidth: '1170px', /* max-width оn very large screen */
-    fields: '0' /* side fields */
+    maxWidth: '1170px' /* max-width оn very large screen */,
+    fields: '0' /* side fields */,
   },
   breakPoints: {
     lg: {
-      width: '1100px', /* -> @media (max-width: 1100px) */
+      width: '1100px' /* -> @media (max-width: 1100px) */,
     },
     md: {
-      width: '960px'
+      width: '960px',
     },
     sm: {
       width: '780px',
-      fields: '15px' /* set fields only if you want to change container.fields */
+      fields:
+        '15px' /* set fields only if you want to change container.fields */,
     },
     xs: {
-      width: '560px'
-    }
-
-  }
+      width: '560px',
+    },
+  },
 };
 
 smartgrid('./src/sass/helpers', settings);
 
-function pugs(){
+function pugs() {
   return src('src/pug/index.pug')
-    .pipe(pug({
-      doctype: 'html',
-      pretty: false
-    }))
+    .pipe(
+      pug({
+        doctype: 'html',
+        pretty: false,
+      }),
+    )
     .pipe(dest('build'));
 }
 
@@ -63,7 +65,7 @@ function styles() {
     .pipe(plumber())
     .pipe(
       stylelint({
-        reporters: [{formatter: 'string', console: true}],
+        reporters: [{ formatter: 'string', console: true }],
       }),
     )
     .pipe(sass())
@@ -89,7 +91,7 @@ function scripts() {
 
 function sprite() {
   return src('src/images/icons/**/*.svg')
-    .pipe(svgstore({inlineSvg: true}))
+    .pipe(svgstore({ inlineSvg: true }))
     .pipe(rename('sprite.svg'))
     .pipe(dest('build/images/icons'));
 }
@@ -97,13 +99,15 @@ function sprite() {
 function images() {
   return src(['src/images/**/*.{png,jpg,jpeg,svg}', '!src/images/icons/**/*'])
     .pipe(
-      cache(imagemin([
-        imagemin.jpegtran({progressive: true}),
-        imagemin.optipng({optimizationLevel: 3}),
-        imagemin.svgo({
-          plugins: [{removeViewBox: false}, {cleanupIDs: false}],
-        }),
-      ])),
+      cache(
+        imagemin([
+          imagemin.jpegtran({ progressive: true }),
+          imagemin.optipng({ optimizationLevel: 3 }),
+          imagemin.svgo({
+            plugins: [{ removeViewBox: false }, { cleanupIDs: false }],
+          }),
+        ]),
+      ),
     )
     .pipe(dest('build/images'));
 }
@@ -136,8 +140,6 @@ function serve() {
 function clean() {
   return del('./build');
 }
-
-
 
 const build = series(
   clean,
